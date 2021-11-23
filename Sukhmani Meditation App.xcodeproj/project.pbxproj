@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DDC4BBC72CD759089683354 /* Pods_Sukhmani_Meditation_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5B19883B1B96E8E597C188 /* Pods_Sukhmani_Meditation_App.framework */; };
+		8E02D36DCE0E7DDB4319FDC8 /* Pods_Sukhmani_Meditation_App_Sukhmani_Meditation_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A229D65AED963328280C3B8 /* Pods_Sukhmani_Meditation_App_Sukhmani_Meditation_AppUITests.framework */; };
+		D65C58E572B4E39647B1FC38 /* Pods_Sukhmani_Meditation_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8B3C4409A6942201C2562F /* Pods_Sukhmani_Meditation_AppTests.framework */; };
 		FA6EEF10274D5DCB00B9A9D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EEF0F274D5DCB00B9A9D3 /* AppDelegate.swift */; };
 		FA6EEF17274D5DCB00B9A9D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6EEF15274D5DCB00B9A9D3 /* Main.storyboard */; };
 		FA6EEF19274D5DCE00B9A9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6EEF18274D5DCE00B9A9D3 /* Assets.xcassets */; };
 		FA6EEF1C274D5DCE00B9A9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6EEF1A274D5DCE00B9A9D3 /* LaunchScreen.storyboard */; };
 		FA6EEF27274D5DCE00B9A9D3 /* Sukhmani_Meditation_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EEF26274D5DCE00B9A9D3 /* Sukhmani_Meditation_AppTests.swift */; };
 		FA6EEF32274D5DCE00B9A9D3 /* Sukhmani_Meditation_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EEF31274D5DCE00B9A9D3 /* Sukhmani_Meditation_AppUITests.swift */; };
+		FA6EEF49274D618100B9A9D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6EEF48274D618100B9A9D3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FCC6E39A0973B79320A6901 /* Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		324817CB385A167A69E5FC62 /* Pods-Sukhmani Meditation App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sukhmani Meditation App.release.xcconfig"; path = "Target Support Files/Pods-Sukhmani Meditation App/Pods-Sukhmani Meditation App.release.xcconfig"; sourceTree = "<group>"; };
+		468CC6E24D7B3684429495B5 /* Pods-Sukhmani Meditation AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sukhmani Meditation AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Sukhmani Meditation AppTests/Pods-Sukhmani Meditation AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A229D65AED963328280C3B8 /* Pods_Sukhmani_Meditation_App_Sukhmani_Meditation_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sukhmani_Meditation_App_Sukhmani_Meditation_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8B3C4409A6942201C2562F /* Pods_Sukhmani_Meditation_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sukhmani_Meditation_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDE0CF9F0DA367257FFECB5 /* Pods-Sukhmani Meditation App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sukhmani Meditation App.debug.xcconfig"; path = "Target Support Files/Pods-Sukhmani Meditation App/Pods-Sukhmani Meditation App.debug.xcconfig"; sourceTree = "<group>"; };
+		C9A659386D69D273FA523759 /* Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EDAF876FBF13E08BF11F71D0 /* Pods-Sukhmani Meditation AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sukhmani Meditation AppTests.release.xcconfig"; path = "Target Support Files/Pods-Sukhmani Meditation AppTests/Pods-Sukhmani Meditation AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE5B19883B1B96E8E597C188 /* Pods_Sukhmani_Meditation_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sukhmani_Meditation_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6EEF0C274D5DCB00B9A9D3 /* Sukhmani Meditation App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sukhmani Meditation App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6EEF0F274D5DCB00B9A9D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6EEF16274D5DCB00B9A9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +58,7 @@
 		FA6EEF2D274D5DCE00B9A9D3 /* Sukhmani Meditation AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sukhmani Meditation AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6EEF31274D5DCE00B9A9D3 /* Sukhmani_Meditation_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sukhmani_Meditation_AppUITests.swift; sourceTree = "<group>"; };
 		FA6EEF33274D5DCE00B9A9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6EEF48274D618100B9A9D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDC4BBC72CD759089683354 /* Pods_Sukhmani_Meditation_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65C58E572B4E39647B1FC38 /* Pods_Sukhmani_Meditation_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +82,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E02D36DCE0E7DDB4319FDC8 /* Pods_Sukhmani_Meditation_App_Sukhmani_Meditation_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		574CD3BD2750BFA56EB37977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE5B19883B1B96E8E597C188 /* Pods_Sukhmani_Meditation_App.framework */,
+				4A229D65AED963328280C3B8 /* Pods_Sukhmani_Meditation_App_Sukhmani_Meditation_AppUITests.framework */,
+				4B8B3C4409A6942201C2562F /* Pods_Sukhmani_Meditation_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B07554877E485F33904CA67B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE0CF9F0DA367257FFECB5 /* Pods-Sukhmani Meditation App.debug.xcconfig */,
+				324817CB385A167A69E5FC62 /* Pods-Sukhmani Meditation App.release.xcconfig */,
+				2FCC6E39A0973B79320A6901 /* Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.debug.xcconfig */,
+				C9A659386D69D273FA523759 /* Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.release.xcconfig */,
+				468CC6E24D7B3684429495B5 /* Pods-Sukhmani Meditation AppTests.debug.xcconfig */,
+				EDAF876FBF13E08BF11F71D0 /* Pods-Sukhmani Meditation AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA6EEF03274D5DCB00B9A9D3 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +120,8 @@
 				FA6EEF25274D5DCE00B9A9D3 /* Sukhmani Meditation AppTests */,
 				FA6EEF30274D5DCE00B9A9D3 /* Sukhmani Meditation AppUITests */,
 				FA6EEF0D274D5DCB00B9A9D3 /* Products */,
+				B07554877E485F33904CA67B /* Pods */,
+				574CD3BD2750BFA56EB37977 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +143,7 @@
 				FA6EEF18274D5DCE00B9A9D3 /* Assets.xcassets */,
 				FA6EEF1A274D5DCE00B9A9D3 /* LaunchScreen.storyboard */,
 				FA6EEF1D274D5DCE00B9A9D3 /* Info.plist */,
+				FA6EEF48274D618100B9A9D3 /* GoogleService-Info.plist */,
 			);
 			path = "Sukhmani Meditation App";
 			sourceTree = "<group>";
@@ -129,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA6EEF36274D5DCE00B9A9D3 /* Build configuration list for PBXNativeTarget "Sukhmani Meditation App" */;
 			buildPhases = (
+				3A38D6127AFCD84B230C7188 /* [CP] Check Pods Manifest.lock */,
 				FA6EEF08274D5DCB00B9A9D3 /* Sources */,
 				FA6EEF09274D5DCB00B9A9D3 /* Frameworks */,
 				FA6EEF0A274D5DCB00B9A9D3 /* Resources */,
+				8EA458FC710FD9536C818A3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA6EEF39274D5DCE00B9A9D3 /* Build configuration list for PBXNativeTarget "Sukhmani Meditation AppTests" */;
 			buildPhases = (
+				86E6D5B9E1604A115AD5B9E1 /* [CP] Check Pods Manifest.lock */,
 				FA6EEF1E274D5DCE00B9A9D3 /* Sources */,
 				FA6EEF1F274D5DCE00B9A9D3 /* Frameworks */,
 				FA6EEF20274D5DCE00B9A9D3 /* Resources */,
@@ -164,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA6EEF3C274D5DCE00B9A9D3 /* Build configuration list for PBXNativeTarget "Sukhmani Meditation AppUITests" */;
 			buildPhases = (
+				02EDB33B526B67EAE8BE9B84 /* [CP] Check Pods Manifest.lock */,
 				FA6EEF29274D5DCE00B9A9D3 /* Sources */,
 				FA6EEF2A274D5DCE00B9A9D3 /* Frameworks */,
 				FA6EEF2B274D5DCE00B9A9D3 /* Resources */,
+				807E2E73BB2F7514C5F00C86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6EEF49274D618100B9A9D3 /* GoogleService-Info.plist in Resources */,
 				FA6EEF1C274D5DCE00B9A9D3 /* LaunchScreen.storyboard in Resources */,
 				FA6EEF19274D5DCE00B9A9D3 /* Assets.xcassets in Resources */,
 				FA6EEF17274D5DCB00B9A9D3 /* Main.storyboard in Resources */,
@@ -246,6 +296,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02EDB33B526B67EAE8BE9B84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A38D6127AFCD84B230C7188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sukhmani Meditation App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807E2E73BB2F7514C5F00C86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests/Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86E6D5B9E1604A115AD5B9E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sukhmani Meditation AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA458FC710FD9536C818A3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sukhmani Meditation App/Pods-Sukhmani Meditation App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sukhmani Meditation App/Pods-Sukhmani Meditation App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sukhmani Meditation App/Pods-Sukhmani Meditation App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA6EEF08274D5DCB00B9A9D3 /* Sources */ = {
@@ -425,6 +578,7 @@
 		};
 		FA6EEF37274D5DCE00B9A9D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDE0CF9F0DA367257FFECB5 /* Pods-Sukhmani Meditation App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +598,7 @@
 		};
 		FA6EEF38274D5DCE00B9A9D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324817CB385A167A69E5FC62 /* Pods-Sukhmani Meditation App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +618,7 @@
 		};
 		FA6EEF3A274D5DCE00B9A9D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468CC6E24D7B3684429495B5 /* Pods-Sukhmani Meditation AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +641,7 @@
 		};
 		FA6EEF3B274D5DCE00B9A9D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDAF876FBF13E08BF11F71D0 /* Pods-Sukhmani Meditation AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +664,7 @@
 		};
 		FA6EEF3D274D5DCE00B9A9D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCC6E39A0973B79320A6901 /* Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +685,7 @@
 		};
 		FA6EEF3E274D5DCE00B9A9D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A659386D69D273FA523759 /* Pods-Sukhmani Meditation App-Sukhmani Meditation AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
