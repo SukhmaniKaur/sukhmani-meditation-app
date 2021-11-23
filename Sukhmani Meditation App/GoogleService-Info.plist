@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>184878567520-rugrsi6bn4iua67d7il1vg1iho54csms.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.184878567520-rugrsi6bn4iua67d7il1vg1iho54csms</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAbhWxGkFQPG6_obeZSQDezMSRSMm2JIKw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>184878567520</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.Sukhmani-Meditation-App</string>
+	<key>PROJECT_ID</key>
+	<string>sukhmani-meditation-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sukhmani-meditation-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:184878567520:ios:6ef93fcdf34da3e518b305</string>
+</dict>
+</plist>
