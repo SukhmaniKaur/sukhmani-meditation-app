@@ -1,8 +1,8 @@
 //
 //  GlobalConstants.swift
-//  NewApp
+//  Sukhmani Meditation App
 //
-//  Created by MACBOOK on 15/11/21.
+//  Created by MACBOOK on 24/11/21.
 //
 
 import Foundation
@@ -13,19 +13,14 @@ struct STORYBOARD {
     static let MAIN = UIStoryboard(name: "Main", bundle: nil)
 }
 
-//MARK: - TABLE_VIEW_CELL
-enum TABLE_VIEW_CELL: String {
-    case NewsListCell
-}
-
 //MARK: - MAIN_STORYBOARD
 enum MAIN_STORYBOARD: String {
-    case NewsListVC, NewsDetailVC
+    case LaunchVC, MainVC, MeditationVC
 }
 
-//MARK: - STATIC_LABELS
-enum STATIC_LABELS: String {
-    case tableView = "TableView"
+//MARK: - ANIMATION
+enum ANIMATION: String {
+    case splashAnimation = "4099-loading"
 }
 
 //MARK:- AppColors
