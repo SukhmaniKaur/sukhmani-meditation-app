@@ -6,24 +6,29 @@
 //
 
 import UIKit
+import SainiUtils
 
 class MeditationVC: UIViewController {
 
+    @IBOutlet weak var playBtn: UIButton!
+    @IBOutlet weak var bgImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - configUI
+    private func configUI() {
+        playBtn.sainiCornerRadius(radius: playBtn.frame.height / 2)
     }
-    */
+    
+    //MARK: - playBtnIsPressed
+    @IBAction func playBtnIsPressed(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.isSelected = false
+        } else {
+            sender.isSelected = true
+        }
+    }
 
 }
