@@ -21,6 +21,8 @@
 		FA6EF0E5274E881600B9A9D3 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF0E4274E881600B9A9D3 /* LaunchVC.swift */; };
 		FA6EF14B274EBB4200B9A9D3 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF14A274EBB4200B9A9D3 /* GlobalConstants.swift */; };
 		FA6EF150274EBDB000B9A9D3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF14F274EBDB000B9A9D3 /* MainVC.swift */; };
+		FA6EF172274EBEAA00B9A9D3 /* HomeCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF170274EBEAA00B9A9D3 /* HomeCardCell.swift */; };
+		FA6EF173274EBEAA00B9A9D3 /* HomeCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF171274EBEAA00B9A9D3 /* HomeCardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FA6EF0E4274E881600B9A9D3 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		FA6EF14A274EBB4200B9A9D3 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		FA6EF14F274EBDB000B9A9D3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FA6EF170274EBEAA00B9A9D3 /* HomeCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardCell.swift; sourceTree = "<group>"; };
+		FA6EF171274EBEAA00B9A9D3 /* HomeCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 		FA6EEF0E274D5DCB00B9A9D3 /* Sukhmani Meditation App */ = {
 			isa = PBXGroup;
 			children = (
+				FA6EF16C274EBE8C00B9A9D3 /* Xib's */,
 				FA6EF149274EBAF600B9A9D3 /* ProjectHelper */,
 				FA6EF148274EBAEF00B9A9D3 /* ViewModel */,
 				FA6EF147274EBAE900B9A9D3 /* View */,
@@ -223,6 +228,15 @@
 				FA6EF14A274EBB4200B9A9D3 /* GlobalConstants.swift */,
 			);
 			path = ProjectHelper;
+			sourceTree = "<group>";
+		};
+		FA6EF16C274EBE8C00B9A9D3 /* Xib's */ = {
+			isa = PBXGroup;
+			children = (
+				FA6EF170274EBEAA00B9A9D3 /* HomeCardCell.swift */,
+				FA6EF171274EBEAA00B9A9D3 /* HomeCardCell.xib */,
+			);
+			path = "Xib's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +349,7 @@
 			files = (
 				FA6EEF49274D618100B9A9D3 /* GoogleService-Info.plist in Resources */,
 				FA6EEF1C274D5DCE00B9A9D3 /* LaunchScreen.storyboard in Resources */,
+				FA6EF173274EBEAA00B9A9D3 /* HomeCardCell.xib in Resources */,
 				FA6EF0E0274E865000B9A9D3 /* 4099-loading.json in Resources */,
 				FA6EEF19274D5DCE00B9A9D3 /* Assets.xcassets in Resources */,
 				FA6EEF17274D5DCB00B9A9D3 /* Main.storyboard in Resources */,
@@ -465,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6EF172274EBEAA00B9A9D3 /* HomeCardCell.swift in Sources */,
 				FA6EEF10274D5DCB00B9A9D3 /* AppDelegate.swift in Sources */,
 				FA6EF150274EBDB000B9A9D3 /* MainVC.swift in Sources */,
 				FA6EF14B274EBB4200B9A9D3 /* GlobalConstants.swift in Sources */,
