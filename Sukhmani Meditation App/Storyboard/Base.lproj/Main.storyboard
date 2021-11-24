@@ -76,6 +76,55 @@
             </objects>
             <point key="canvasLocation" x="2677.5" y="14.788732394366198"/>
         </scene>
+        <!--Meditation-->
+        <scene sceneID="5lg-nf-qUI">
+            <objects>
+                <viewController storyboardIdentifier="MeditationVC" id="8rK-ta-BpM" customClass="MeditationVC" customModule="Sukhmani_Meditation_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LY5-9F-qh9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hYY-vr-rYz">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpE-t0-LKO">
+                                <rect key="frame" x="110" y="259" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.6705882353" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CqM-55-NWb"/>
+                                    <constraint firstAttribute="height" constant="50" id="cSE-ak-jNa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="Pause"/>
+                                <connections>
+                                    <action selector="playBtnIsPressed:" destination="8rK-ta-BpM" eventType="touchUpInside" id="9wc-xt-0Qg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kqh-xl-PZA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hYY-vr-rYz" firstAttribute="top" secondItem="Kqh-xl-PZA" secondAttribute="top" id="1Dc-vs-DTp"/>
+                            <constraint firstItem="hYY-vr-rYz" firstAttribute="leading" secondItem="Kqh-xl-PZA" secondAttribute="leading" id="2RB-jj-kz8"/>
+                            <constraint firstAttribute="bottom" secondItem="hYY-vr-rYz" secondAttribute="bottom" id="6Pk-v7-4aH"/>
+                            <constraint firstItem="jpE-t0-LKO" firstAttribute="centerY" secondItem="LY5-9F-qh9" secondAttribute="centerY" id="dc8-16-Dwf"/>
+                            <constraint firstItem="jpE-t0-LKO" firstAttribute="centerX" secondItem="LY5-9F-qh9" secondAttribute="centerX" id="jGm-Sf-SMa"/>
+                            <constraint firstItem="Kqh-xl-PZA" firstAttribute="trailing" secondItem="hYY-vr-rYz" secondAttribute="trailing" id="tQ0-bY-4NH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meditation" id="Eyy-vC-hoa"/>
+                    <connections>
+                        <outlet property="bgImage" destination="hYY-vr-rYz" id="S1J-z1-85X"/>
+                        <outlet property="playBtn" destination="jpE-t0-LKO" id="Izx-St-5yu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ee-hg-cUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4386" y="15"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PKz-8H-hfz">
             <objects>
@@ -91,7 +140,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhI-w0-m8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.5" y="14.788732394366198"/>
+            <point key="canvasLocation" x="189" y="15"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QId-tW-822">
@@ -110,6 +159,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYS-d9-DyB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1861.875" y="14.788732394366198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QtN-yN-D47">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xR0-oE-cVY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LRF-ag-RoV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rK-ta-BpM" kind="relationship" relationship="rootViewController" id="n3t-YP-kXV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdt-qI-6JX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3528.75" y="14.788732394366198"/>
         </scene>
     </scenes>
     <resources>
