@@ -18,6 +18,8 @@
 		FA6EEF32274D5DCE00B9A9D3 /* Sukhmani_Meditation_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EEF31274D5DCE00B9A9D3 /* Sukhmani_Meditation_AppUITests.swift */; };
 		FA6EEF49274D618100B9A9D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6EEF48274D618100B9A9D3 /* GoogleService-Info.plist */; };
 		FA6EF0E0274E865000B9A9D3 /* 4099-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF0DF274E865000B9A9D3 /* 4099-loading.json */; };
+		FA6EF0E5274E881600B9A9D3 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF0E4274E881600B9A9D3 /* LaunchVC.swift */; };
+		FA6EF14B274EBB4200B9A9D3 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF14A274EBB4200B9A9D3 /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		FA6EEF33274D5DCE00B9A9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6EEF48274D618100B9A9D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA6EF0DF274E865000B9A9D3 /* 4099-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4099-loading.json"; sourceTree = "<group>"; };
+		FA6EF0E4274E881600B9A9D3 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		FA6EF14A274EBB4200B9A9D3 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +143,13 @@
 		FA6EEF0E274D5DCB00B9A9D3 /* Sukhmani Meditation App */ = {
 			isa = PBXGroup;
 			children = (
+				FA6EF149274EBAF600B9A9D3 /* ProjectHelper */,
+				FA6EF148274EBAEF00B9A9D3 /* ViewModel */,
+				FA6EF147274EBAE900B9A9D3 /* View */,
+				FA6EF146274EBAE100B9A9D3 /* Model */,
+				FA6EF145274EBAD000B9A9D3 /* Storyboard */,
 				FA6EF0DE274E863A00B9A9D3 /* LottieAnimation */,
 				FA6EEF0F274D5DCB00B9A9D3 /* AppDelegate.swift */,
-				FA6EEF15274D5DCB00B9A9D3 /* Main.storyboard */,
 				FA6EEF18274D5DCE00B9A9D3 /* Assets.xcassets */,
 				FA6EEF1A274D5DCE00B9A9D3 /* LaunchScreen.storyboard */,
 				FA6EEF1D274D5DCE00B9A9D3 /* Info.plist */,
@@ -174,6 +182,44 @@
 				FA6EF0DF274E865000B9A9D3 /* 4099-loading.json */,
 			);
 			path = LottieAnimation;
+			sourceTree = "<group>";
+		};
+		FA6EF145274EBAD000B9A9D3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA6EEF15274D5DCB00B9A9D3 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA6EF146274EBAE100B9A9D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA6EF147274EBAE900B9A9D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA6EF0E4274E881600B9A9D3 /* LaunchVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA6EF148274EBAEF00B9A9D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA6EF149274EBAF600B9A9D3 /* ProjectHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FA6EF14A274EBB4200B9A9D3 /* GlobalConstants.swift */,
+			);
+			path = ProjectHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +463,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6EEF10274D5DCB00B9A9D3 /* AppDelegate.swift in Sources */,
+				FA6EF14B274EBB4200B9A9D3 /* GlobalConstants.swift in Sources */,
+				FA6EF0E5274E881600B9A9D3 /* LaunchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
