@@ -16,6 +16,13 @@ class MainVC: UIViewController {
         configUI()
     }
     
+    //MARK: - viewWillAppear
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.setHidesBackButton(true, animated: animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     //MARK: - configUI
     private func configUI() {
         tableView.register(UINib(nibName: TABLE_VIEW_CELL.HomeCardCell.rawValue, bundle: nil), forCellReuseIdentifier: TABLE_VIEW_CELL.HomeCardCell.rawValue)
@@ -43,6 +50,8 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     // didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // todo
+        let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MeditationVC.rawValue) as! MeditationVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 }

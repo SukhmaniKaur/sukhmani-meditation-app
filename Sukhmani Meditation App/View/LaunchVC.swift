@@ -23,8 +23,7 @@ class LaunchVC: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue)
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: false, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: false)
         }
     }
     
