@@ -10,10 +10,22 @@ import Lottie
 
 class LaunchVC: UIViewController {
 
+    // OUTLETS
     @IBOutlet weak var animationView: AnimationView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        configUI()
+    }
+    
+    //MARK: - configUI
+    private func configUI() {
         lottieAnimationSetup()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue)
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
+        }
     }
     
     //MARK: - lottieAnimationSetup
@@ -24,15 +36,6 @@ class LaunchVC: UIViewController {
         animationView.loopMode = .loop
         animationView.play()
         view.addSubview(animationView)
-        
-        UIView.animate(withDuration: 84) {
-            
-        } completion: { (done) in
-            if done {
-//                todo
-            }
-        }
-
     }
 
 }

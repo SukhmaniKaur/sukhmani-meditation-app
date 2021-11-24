@@ -18,6 +18,11 @@ enum MAIN_STORYBOARD: String {
     case LaunchVC, MainVC, MeditationVC
 }
 
+//MARK: - TABLE_VIEW_CELL
+enum TABLE_VIEW_CELL: String {
+    case HomeCardCell
+}
+
 //MARK: - ANIMATION
 enum ANIMATION: String {
     case splashAnimation = "4099-loading"
