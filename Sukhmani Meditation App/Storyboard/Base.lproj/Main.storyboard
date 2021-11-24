@@ -8,16 +8,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LaunchVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchVC" customModule="Sukhmani_Meditation_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmG-oE-XV3" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BmG-oE-XV3" secondAttribute="height" multiplier="1:1" id="l9S-az-kas"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BmG-oE-XV3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IIj-Tx-Bky"/>
+                            <constraint firstItem="BmG-oE-XV3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IqX-E7-Ngc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BmG-oE-XV3" secondAttribute="trailing" id="Qv6-zd-PRQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="BmG-oE-XV3" id="fru-oz-wsL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
