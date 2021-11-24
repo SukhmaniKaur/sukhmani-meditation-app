@@ -8,6 +8,8 @@ target 'Sukhmani Meditation App' do
   # Pods for Sukhmani Meditation App
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'lottie-ios'
+
 
   target 'Sukhmani Meditation AppTests' do
     inherit! :search_paths
