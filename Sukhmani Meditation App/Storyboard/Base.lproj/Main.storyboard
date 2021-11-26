@@ -164,6 +164,45 @@
             </objects>
             <point key="canvasLocation" x="1861.875" y="14.788732394366198"/>
         </scene>
+        <!--LoginVC-->
+        <scene sceneID="3t8-Hw-o6q">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="Ruf-lx-sB8" customClass="LoginVC" customModule="Sukhmani_Meditation_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2h-ws-PVB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GDK-hV-w0h">
+                                <rect key="frame" x="40" y="264" width="240" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqm-bd-QlC">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="cFA-i6-KEw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Google Sign In"/>
+                                        <connections>
+                                            <action selector="signInWithGoogleBtnIsPressed:" destination="Ruf-lx-sB8" eventType="touchUpInside" id="sK0-6D-gUh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z7s-aM-r6L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GDK-hV-w0h" firstAttribute="centerY" secondItem="F2h-ws-PVB" secondAttribute="centerY" id="Kd4-QV-6UR"/>
+                            <constraint firstItem="z7s-aM-r6L" firstAttribute="trailing" secondItem="GDK-hV-w0h" secondAttribute="trailing" constant="40" id="Xf1-Dw-0c8"/>
+                            <constraint firstItem="GDK-hV-w0h" firstAttribute="leading" secondItem="z7s-aM-r6L" secondAttribute="leading" constant="40" id="YW0-pD-6VX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vrh-Of-qLV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3a-fq-MhS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2859.375" y="817.6056338028169"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="QtN-yN-D47">
             <objects>
@@ -181,6 +220,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdt-qI-6JX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3528.75" y="14.788732394366198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JbS-fF-XAc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="PYY-61-Fm1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ue-jF-MZ7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ruf-lx-sB8" kind="relationship" relationship="rootViewController" id="bPk-Ng-JB3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ElI-eV-U75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861.875" y="817.6056338028169"/>
         </scene>
     </scenes>
     <resources>
