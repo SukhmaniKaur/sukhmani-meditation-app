@@ -7,16 +7,24 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
+import SainiUtils
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let signInConfig = GIDConfiguration.init(clientID: GOOGLE.clientId.rawValue)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         return true
+    }
+    
+    //MARK: - sharedDelegate
+    func sharedDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -43,3 +51,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//MARK:- Google Login
+extension AppDelegate {
+    //=================GOOGLE SIGNIN============
+    func loginWithGoogle(vc: UIViewController)
+    {
+        GIDSignIn.sharedInstance.signOut()
+        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: vc) { user, error in
+            if let error = error {
+                print("\(error.localizedDescription)")
+            } else {
+                // Perform any operations on signed in user here.
+                print(user?.userID ?? "")                  // For client-side use only!
+                print(user?.authentication.idToken ?? "") // Safe to send to the server
+                print(user?.profile?.name ?? "")
+                print(user?.profile?.givenName ?? "")
+                print(user?.profile?.familyName ?? "")
+                print(user?.profile?.email ?? "")
+                print(user?.profile?.imageURL(withDimension: 500) ?? "")
+                
+                guard let socialToken = user?.authentication.idToken  else { return }
+                guard let userId = user?.userID else { return }
+                
+                var emailId = ""
+                if let email = user?.profile?.email
+                {
+                    emailId = email
+                }
+                var fname = ""
+                if let temp = user?.profile?.name {
+                    fname = temp
+                }
+                let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue) as! MainVC
+                if let visibleViewController = visibleViewController(){
+                    visibleViewController.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        }
+    }
+}
