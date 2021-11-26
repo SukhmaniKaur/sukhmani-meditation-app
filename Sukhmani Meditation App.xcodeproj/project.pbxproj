@@ -30,6 +30,7 @@
 		FA6EF22B2751305E00B9A9D3 /* HomeListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */; };
 		FA6EF24927515C8F00B9A9D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF24827515C8F00B9A9D3 /* Utility.swift */; };
 		FA6EF266275169AF00B9A9D3 /* MeditationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF265275169AE00B9A9D3 /* MeditationDetailViewModel.swift */; };
+		FA6EF2A52751A73900B9A9D3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF2A42751A73900B9A9D3 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingViewModel.swift; sourceTree = "<group>"; };
 		FA6EF24827515C8F00B9A9D3 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		FA6EF265275169AE00B9A9D3 /* MeditationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDetailViewModel.swift; sourceTree = "<group>"; };
+		FA6EF2A42751A73900B9A9D3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				FA6EF0E4274E881600B9A9D3 /* LaunchVC.swift */,
 				FA6EF14F274EBDB000B9A9D3 /* MainVC.swift */,
 				FA6EF177274EC51100B9A9D3 /* MeditationVC.swift */,
+				FA6EF2A42751A73900B9A9D3 /* LoginVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				FA6EF14B274EBB4200B9A9D3 /* GlobalConstants.swift in Sources */,
 				FA6EF266275169AF00B9A9D3 /* MeditationDetailViewModel.swift in Sources */,
 				FA6EF22B2751305E00B9A9D3 /* HomeListingViewModel.swift in Sources */,
+				FA6EF2A52751A73900B9A9D3 /* LoginVC.swift in Sources */,
 				FA6EF22127512F8C00B9A9D3 /* DataModel.swift in Sources */,
 				FA6EF21927510EBE00B9A9D3 /* Database.swift in Sources */,
 				FA6EF0E5274E881600B9A9D3 /* LaunchVC.swift in Sources */,
