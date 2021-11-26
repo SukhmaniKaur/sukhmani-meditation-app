@@ -22,4 +22,10 @@ class HomeCardCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    var listData: CollectionModel = CollectionModel() {
+        didSet {
+            meditationNameLbl.text = listData.name
+        }
+    }
+    
 }
