@@ -15,7 +15,7 @@ struct STORYBOARD {
 
 //MARK: - MAIN_STORYBOARD
 enum MAIN_STORYBOARD: String {
-    case LaunchVC, MainVC, MeditationVC
+    case LaunchVC, MainVC, MeditationVC, LoginVC
 }
 
 //MARK: - TABLE_VIEW_CELL
@@ -41,4 +41,9 @@ struct DocumentDefaultValues{
         static let bool = false
         static let double = 0.0
     }
+}
+
+//MARK: - GOOGLE
+enum GOOGLE: String {
+    case clientId = "184878567520-rugrsi6bn4iua67d7il1vg1iho54csms.apps.googleusercontent.com"
 }
