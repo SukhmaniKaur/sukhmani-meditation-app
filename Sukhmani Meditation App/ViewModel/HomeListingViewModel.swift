@@ -21,6 +21,9 @@ struct HomeListingViewModel: HomeListingDelegate {
     func fetchHomeListing() {
         let fsDb = FSDatabase()
         fsDb.fetchCollection { (response,docIdArr)  in
+            DispatchQueue.main.async {
+                UIViewController.top?.view.sainiRemoveLoader()
+            }
             if let success = response , !success.isEmpty {
                 self.docIdArray.value = docIdArr
                 self.collectionArr.value = success

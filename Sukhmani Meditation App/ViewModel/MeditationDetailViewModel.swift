@@ -20,6 +20,9 @@ struct MeditationDetailViewModel: MeditationDetailDelegate {
     func fetchMeditationDetail(meditationName: String) {
         let fsDb = FSDatabase()
         fsDb.fetchCollectionDetail(docName: meditationName, completion: { (response) in
+            DispatchQueue.main.async {
+                UIViewController.top?.view.sainiRemoveLoader()
+            }
             if let success = response , !success.isEmpty {
                 self.detailArr.value = success[0]
             }
