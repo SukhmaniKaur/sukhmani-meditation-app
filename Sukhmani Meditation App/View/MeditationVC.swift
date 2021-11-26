@@ -7,12 +7,14 @@
 
 import UIKit
 import SainiUtils
+import AVKit
 
 class MeditationVC: UIViewController {
     
     private var meditationDetailVM: MeditationDetailViewModel = MeditationDetailViewModel()
     var meditationName: String = String()
-
+    var player : AVAudioPlayer?
+    
     // OUTLETS
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var bgImage: UIImageView!
@@ -39,9 +41,39 @@ class MeditationVC: UIViewController {
     @IBAction func playBtnIsPressed(_ sender: UIButton) {
         if sender.isSelected {
             sender.isSelected = false
+            stopMusic()
         } else {
             sender.isSelected = true
+            let urlstring = meditationDetailVM.detailArr.value.link
+            guard let url = URL(string: urlstring) else { return }
+            print("the url = \(url)")
+            meditationDetailVM.downloadFileFromURL(url: url, {[weak self] url in
+                guard let linkUrl = url else { return }
+                self?.playMusic(url: linkUrl)
+            })
         }
     }
-
+    
+    //MARK: - playMusic
+    private func playMusic(url: URL) {
+        print("playing \(url)")
+        DispatchQueue.main.async {
+            UIViewController.top?.view.sainiRemoveLoader()
+        }
+        do {
+            self.player = try AVAudioPlayer(contentsOf: url)
+            player?.prepareToPlay()
+            player?.volume = 1.0
+            player?.play()
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        } catch {
+            print("AVAudioPlayer init failed")
+        }
+    }
+    
+    //MARK: - stopMusic
+    private func stopMusic() {
+        self.player?.stop()
+    }
 }

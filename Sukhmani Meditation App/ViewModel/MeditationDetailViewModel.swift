@@ -11,6 +11,7 @@ import SainiUtils
 protocol MeditationDetailDelegate {
     var detailArr: Box<CollectionDetailModel> { get set }
     func fetchMeditationDetail(meditationName: String)
+    func downloadFileFromURL(url: URL, _ completion: @escaping ((URL)?) -> Void)
 }
 
 struct MeditationDetailViewModel: MeditationDetailDelegate {
@@ -26,5 +27,17 @@ struct MeditationDetailViewModel: MeditationDetailDelegate {
                 log.info("ERROR")/
             }
         })
+    }
+    
+    func downloadFileFromURL(url: URL, _ completion: @escaping ((URL)?) -> Void){
+        DispatchQueue.main.async {
+            UIViewController.top?.view.sainiShowLoader(loaderColor: UIColor.darkGray)
+        }
+        var downloadTask:URLSessionDownloadTask
+        downloadTask = URLSession.shared.downloadTask(with: url, completionHandler: { (URL, response, error) -> Void in
+            guard let linkUrl = URL else { return}
+            completion(linkUrl)
+        })
+        downloadTask.resume()
     }
 }
