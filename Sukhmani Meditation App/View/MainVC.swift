@@ -8,6 +8,8 @@
 import UIKit
 
 class MainVC: UIViewController {
+    
+    private var homeListVM: HomeListingViewModel = HomeListingViewModel()
 
     // OUTLETS
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +28,15 @@ class MainVC: UIViewController {
     //MARK: - configUI
     private func configUI() {
         tableView.register(UINib(nibName: TABLE_VIEW_CELL.HomeCardCell.rawValue, bundle: nil), forCellReuseIdentifier: TABLE_VIEW_CELL.HomeCardCell.rawValue)
+        homeListVM.fetchHomeListing()
+        homeListVM.collectionArr.bind { [weak self](_) in
+            guard let `self` = self else { return }
+            if !self.homeListVM.collectionArr.value.isEmpty {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
 }
 
@@ -34,7 +45,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     //numberOfRowsInSection
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return homeListVM.collectionArr.value.count
     }
     
     // heightForRowAt
@@ -45,6 +56,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     // cellForRowAt
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TABLE_VIEW_CELL.HomeCardCell.rawValue, for: indexPath) as? HomeCardCell else { return UITableViewCell() }
+        cell.listData = homeListVM.collectionArr.value[indexPath.row]
         return cell
     }
     
