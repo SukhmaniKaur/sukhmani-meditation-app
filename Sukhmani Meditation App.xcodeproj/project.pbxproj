@@ -29,6 +29,7 @@
 		FA6EF22627512FFC00B9A9D3 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF22527512FFC00B9A9D3 /* Binding.swift */; };
 		FA6EF22B2751305E00B9A9D3 /* HomeListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */; };
 		FA6EF24927515C8F00B9A9D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF24827515C8F00B9A9D3 /* Utility.swift */; };
+		FA6EF266275169AF00B9A9D3 /* MeditationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF265275169AE00B9A9D3 /* MeditationDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		FA6EF22527512FFC00B9A9D3 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingViewModel.swift; sourceTree = "<group>"; };
 		FA6EF24827515C8F00B9A9D3 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		FA6EF265275169AE00B9A9D3 /* MeditationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */,
+				FA6EF265275169AE00B9A9D3 /* MeditationDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				FA6EF150274EBDB000B9A9D3 /* MainVC.swift in Sources */,
 				FA6EF22627512FFC00B9A9D3 /* Binding.swift in Sources */,
 				FA6EF14B274EBB4200B9A9D3 /* GlobalConstants.swift in Sources */,
+				FA6EF266275169AF00B9A9D3 /* MeditationDetailViewModel.swift in Sources */,
 				FA6EF22B2751305E00B9A9D3 /* HomeListingViewModel.swift in Sources */,
 				FA6EF22127512F8C00B9A9D3 /* DataModel.swift in Sources */,
 				FA6EF21927510EBE00B9A9D3 /* Database.swift in Sources */,

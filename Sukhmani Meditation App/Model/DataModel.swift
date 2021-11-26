@@ -22,3 +22,18 @@ struct CollectionModel: Codable {
         self.doing_right_now = DocumentDefaultValues.Empty.int
     }
 }
+
+struct CollectionDetailModel: Codable {
+    let link, imageLink: String
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        link = try values.decodeIfPresent(String.self, forKey: .link) ?? DocumentDefaultValues.Empty.string
+        imageLink = try values.decodeIfPresent(String.self, forKey: .imageLink) ?? DocumentDefaultValues.Empty.string
+    }
+    
+    internal init() {
+        self.link = DocumentDefaultValues.Empty.string
+        self.imageLink = DocumentDefaultValues.Empty.string
+    }
+}

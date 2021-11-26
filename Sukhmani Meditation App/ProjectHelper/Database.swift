@@ -18,4 +18,13 @@ class FSDatabase: NSObject {
             completion(collectionArr)
         }
     }
+    
+    func fetchCollectionDetail(docName: String, completion: @escaping (_ dictArr: [CollectionDetailModel]?) -> Void) {
+        let docRef = Firestore.firestore().collection("meditation").document(docName).collection("session")
+        docRef.getDocuments { (querySnapshot, err) in
+            guard err == nil else { return }
+            guard let collectionDetailArr: [CollectionDetailModel] = try? querySnapshot?.toObject() else { return }
+            completion(collectionDetailArr)
+        }
+    }
 }
