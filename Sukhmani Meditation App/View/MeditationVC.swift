@@ -9,7 +9,11 @@ import UIKit
 import SainiUtils
 
 class MeditationVC: UIViewController {
+    
+    private var meditationDetailVM: MeditationDetailViewModel = MeditationDetailViewModel()
+    var meditationName: String = String()
 
+    // OUTLETS
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var bgImage: UIImageView!
     override func viewDidLoad() {
@@ -20,6 +24,15 @@ class MeditationVC: UIViewController {
     //MARK: - configUI
     private func configUI() {
         playBtn.sainiCornerRadius(radius: playBtn.frame.height / 2)
+        
+        meditationDetailVM.fetchMeditationDetail(meditationName: meditationName)
+        
+        meditationDetailVM.detailArr.bind { [weak self](_) in
+            guard let `self` = self else { return }
+            if !self.meditationDetailVM.detailArr.value.imageLink.isEmpty {
+                self.bgImage.downloadCachedImage(placeholder: "", urlString: self.meditationDetailVM.detailArr.value.imageLink)
+            }
+        }
     }
     
     //MARK: - playBtnIsPressed
