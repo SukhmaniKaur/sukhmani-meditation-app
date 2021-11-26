@@ -24,6 +24,11 @@
 		FA6EF172274EBEAA00B9A9D3 /* HomeCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF170274EBEAA00B9A9D3 /* HomeCardCell.swift */; };
 		FA6EF173274EBEAA00B9A9D3 /* HomeCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF171274EBEAA00B9A9D3 /* HomeCardCell.xib */; };
 		FA6EF178274EC51100B9A9D3 /* MeditationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF177274EC51100B9A9D3 /* MeditationVC.swift */; };
+		FA6EF21927510EBE00B9A9D3 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF21827510EBD00B9A9D3 /* Database.swift */; };
+		FA6EF22127512F8C00B9A9D3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF22027512F8C00B9A9D3 /* DataModel.swift */; };
+		FA6EF22627512FFC00B9A9D3 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF22527512FFC00B9A9D3 /* Binding.swift */; };
+		FA6EF22B2751305E00B9A9D3 /* HomeListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */; };
+		FA6EF24927515C8F00B9A9D3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF24827515C8F00B9A9D3 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		FA6EF170274EBEAA00B9A9D3 /* HomeCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardCell.swift; sourceTree = "<group>"; };
 		FA6EF171274EBEAA00B9A9D3 /* HomeCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCardCell.xib; sourceTree = "<group>"; };
 		FA6EF177274EC51100B9A9D3 /* MeditationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationVC.swift; sourceTree = "<group>"; };
+		FA6EF21827510EBD00B9A9D3 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		FA6EF22027512F8C00B9A9D3 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		FA6EF22527512FFC00B9A9D3 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingViewModel.swift; sourceTree = "<group>"; };
+		FA6EF24827515C8F00B9A9D3 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +214,7 @@
 		FA6EF146274EBAE100B9A9D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA6EF22027512F8C00B9A9D3 /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +232,7 @@
 		FA6EF148274EBAEF00B9A9D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FA6EF22A2751305E00B9A9D3 /* HomeListingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -229,6 +241,9 @@
 			isa = PBXGroup;
 			children = (
 				FA6EF14A274EBB4200B9A9D3 /* GlobalConstants.swift */,
+				FA6EF22527512FFC00B9A9D3 /* Binding.swift */,
+				FA6EF21827510EBD00B9A9D3 /* Database.swift */,
+				FA6EF24827515C8F00B9A9D3 /* Utility.swift */,
 			);
 			path = ProjectHelper;
 			sourceTree = "<group>";
@@ -486,8 +501,13 @@
 				FA6EF178274EC51100B9A9D3 /* MeditationVC.swift in Sources */,
 				FA6EF172274EBEAA00B9A9D3 /* HomeCardCell.swift in Sources */,
 				FA6EEF10274D5DCB00B9A9D3 /* AppDelegate.swift in Sources */,
+				FA6EF24927515C8F00B9A9D3 /* Utility.swift in Sources */,
 				FA6EF150274EBDB000B9A9D3 /* MainVC.swift in Sources */,
+				FA6EF22627512FFC00B9A9D3 /* Binding.swift in Sources */,
 				FA6EF14B274EBB4200B9A9D3 /* GlobalConstants.swift in Sources */,
+				FA6EF22B2751305E00B9A9D3 /* HomeListingViewModel.swift in Sources */,
+				FA6EF22127512F8C00B9A9D3 /* DataModel.swift in Sources */,
+				FA6EF21927510EBE00B9A9D3 /* Database.swift in Sources */,
 				FA6EF0E5274E881600B9A9D3 /* LaunchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,6 +688,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = "Sukhmani Meditation App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -688,6 +709,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = "Sukhmani Meditation App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
