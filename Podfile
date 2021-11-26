@@ -11,6 +11,7 @@ target 'Sukhmani Meditation App' do
   pod 'lottie-ios'
   pod 'SainiUtils'
   pod 'SDWebImage', '~> 4.0'
+  pod 'GoogleSignIn'
 
   target 'Sukhmani Meditation AppTests' do
     inherit! :search_paths
