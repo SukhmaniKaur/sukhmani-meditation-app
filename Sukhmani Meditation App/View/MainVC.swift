@@ -63,6 +63,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     // didSelectRowAt
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MeditationVC.rawValue) as! MeditationVC
+        vc.meditationName = homeListVM.docIdArray.value[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
