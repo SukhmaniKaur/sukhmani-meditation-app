@@ -68,7 +68,13 @@
                             <constraint firstItem="EnU-kM-mih" firstAttribute="top" secondItem="A0M-Bp-600" secondAttribute="top" id="H37-Am-dtM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="6kJ-Hs-Frp"/>
+                    <navigationItem key="navigationItem" title="Home" id="6kJ-Hs-Frp">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="N63-1S-tdP">
+                            <connections>
+                                <action selector="logoutBtnIsPressed:" destination="kx6-mu-NMB" id="hev-2E-j5t"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="EnU-kM-mih" id="quD-6F-WV0"/>
                     </connections>
@@ -235,7 +241,7 @@
         <!--Navigation Controller-->
         <scene sceneID="JbS-fF-XAc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="PYY-61-Fm1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginVCNav" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="PYY-61-Fm1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ue-jF-MZ7">
                         <autoresizingMask key="autoresizingMask"/>
@@ -247,7 +253,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ElI-eV-U75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861.875" y="817.6056338028169"/>
+            <point key="canvasLocation" x="2066" y="818"/>
         </scene>
     </scenes>
     <resources>
