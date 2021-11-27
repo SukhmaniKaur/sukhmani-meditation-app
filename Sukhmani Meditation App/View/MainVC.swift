@@ -42,7 +42,7 @@ class MainVC: UIViewController {
     //MARK: - logoutBtnIsPressed
     @IBAction func logoutBtnIsPressed(_ sender: UIBarButtonItem) {
         setIsUserLogin(isUserLogin: false)
-        let navigationVC = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "LoginVCNav") as! UINavigationController
+        let navigationVC = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.LoginVCNav.rawValue) as! UINavigationController
         UIApplication.shared.keyWindow?.rootViewController = navigationVC
         
     }

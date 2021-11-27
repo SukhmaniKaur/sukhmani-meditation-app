@@ -15,7 +15,7 @@ struct STORYBOARD {
 
 //MARK: - MAIN_STORYBOARD
 enum MAIN_STORYBOARD: String {
-    case LaunchVC, MainVC, MeditationVC, LoginVC
+    case LaunchVC, MainVC, MeditationVC, LoginVC, LoginVCNav
 }
 
 //MARK: - TABLE_VIEW_CELL
