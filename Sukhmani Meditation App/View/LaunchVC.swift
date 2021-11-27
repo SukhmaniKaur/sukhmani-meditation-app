@@ -21,9 +21,11 @@ class LaunchVC: UIViewController {
     private func configUI() {
         lottieAnimationSetup()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.LoginVC.rawValue) as! LoginVC
-            self.navigationController?.pushViewController(vc, animated: false)
+        if !isUserLogin() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.LoginVC.rawValue) as! LoginVC
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
         }
     }
     

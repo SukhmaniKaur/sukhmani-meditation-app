@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        autoLogin()
         return true
     }
     
@@ -48,6 +49,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    //MARK: - autoLogin
+    private func autoLogin() {
+        if isUserLogin() {
+            let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue) as! MainVC
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {                UIApplication.topViewController()?.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        else {
+            log.todo("No logged in user found yet")/
+        }
+    }
 
 }
 
@@ -69,9 +82,10 @@ extension AppDelegate {
                 print(user?.profile?.familyName ?? "")
                 print(user?.profile?.email ?? "")
                 print(user?.profile?.imageURL(withDimension: 500) ?? "")
-                let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue) as! MainVC
+                setIsUserLogin(isUserLogin: true)
+                let mainVc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue) as! MainVC
                 if let visibleViewController = visibleViewController(){
-                    visibleViewController.navigationController?.pushViewController(vc, animated: true)
+                    visibleViewController.navigationController?.pushViewController(mainVc, animated: true)
                 }
             }
         }

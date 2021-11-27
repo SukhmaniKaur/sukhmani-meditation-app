@@ -101,3 +101,34 @@ extension UIViewController {
         }
     }
 }
+
+extension UIApplication {
+    //MARK: - topViewController
+    class func topViewController(base: UIViewController? = (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController) -> UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(base: nav.visibleViewController)
+        }
+        if let tab = base as? UITabBarController {
+            if let selected = tab.selectedViewController {
+                return topViewController(base: selected)
+            }
+        }
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        return base
+    }
+}
+
+
+//MARK: - User login boolean
+func setIsUserLogin(isUserLogin: Bool)
+{
+    UserDefaults.standard.set(isUserLogin, forKey: USER_DEFAULT_KEYS.isUserLogin.rawValue)
+}
+
+func isUserLogin() -> Bool
+{
+    let isUserLogin = UserDefaults.standard.bool(forKey: USER_DEFAULT_KEYS.isUserLogin.rawValue)
+    return (isUserLogin)
+}

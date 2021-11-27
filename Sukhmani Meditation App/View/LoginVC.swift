@@ -29,6 +29,7 @@ class LoginVC: UIViewController {
                 print(error.localizedDescription)
                 return
             }
+            setIsUserLogin(isUserLogin: true)
             let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue) as! MainVC
             self.navigationController?.pushViewController(vc, animated: true)
         }
