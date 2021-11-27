@@ -69,19 +69,6 @@ extension AppDelegate {
                 print(user?.profile?.familyName ?? "")
                 print(user?.profile?.email ?? "")
                 print(user?.profile?.imageURL(withDimension: 500) ?? "")
-                
-                guard let socialToken = user?.authentication.idToken  else { return }
-                guard let userId = user?.userID else { return }
-                
-                var emailId = ""
-                if let email = user?.profile?.email
-                {
-                    emailId = email
-                }
-                var fname = ""
-                if let temp = user?.profile?.name {
-                    fname = temp
-                }
                 let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue) as! MainVC
                 if let visibleViewController = visibleViewController(){
                     visibleViewController.navigationController?.pushViewController(vc, animated: true)

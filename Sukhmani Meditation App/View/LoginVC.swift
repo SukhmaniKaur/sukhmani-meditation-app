@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVC: UIViewController {
 
@@ -20,4 +21,16 @@ class LoginVC: UIViewController {
         AppDelegate().sharedDelegate().loginWithGoogle(vc: self)
     }
 
+    //MARK: - anonymousSignInBtnIsPressed
+    @IBAction func anonymousSignInBtnIsPressed(_ sender: UIButton) {
+        let auth = Auth.auth()
+        auth.signInAnonymously { (result, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.MainVC.rawValue) as! MainVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
