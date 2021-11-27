@@ -38,6 +38,14 @@ class MainVC: UIViewController {
             }
         }
     }
+    
+    //MARK: - logoutBtnIsPressed
+    @IBAction func logoutBtnIsPressed(_ sender: UIBarButtonItem) {
+        setIsUserLogin(isUserLogin: false)
+        let navigationVC = STORYBOARD.MAIN.instantiateViewController(withIdentifier: "LoginVCNav") as! UINavigationController
+        UIApplication.shared.keyWindow?.rootViewController = navigationVC
+        
+    }
 }
 
 //MARK: - UITableView DataSource and Delegate Methods
