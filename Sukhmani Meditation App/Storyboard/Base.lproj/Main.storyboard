@@ -172,18 +172,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GDK-hV-w0h">
-                                <rect key="frame" x="40" y="264" width="240" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GDK-hV-w0h">
+                                <rect key="frame" x="40" y="229" width="240" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqm-bd-QlC">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="cFA-i6-KEw"/>
+                                            <constraint firstAttribute="height" constant="50" id="cFA-i6-KEw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="Google Sign In"/>
                                         <connections>
                                             <action selector="signInWithGoogleBtnIsPressed:" destination="Ruf-lx-sB8" eventType="touchUpInside" id="sK0-6D-gUh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yn1-Ze-h9l">
+                                        <rect key="frame" x="0.0" y="60" width="240" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HyM-D5-rNN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Anonymous Sign In"/>
+                                        <connections>
+                                            <action selector="anonymousSignInBtnIsPressed:" destination="Ruf-lx-sB8" eventType="touchUpInside" id="abG-2Z-4mh"/>
                                         </connections>
                                     </button>
                                 </subviews>
